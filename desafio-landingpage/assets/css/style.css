@@ -1,0 +1,92 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+  }
+
+  html, body {
+    height: 100%;
+}
+
+
+img {
+  width: 20%;
+}
+
+.cabecera {
+  position: relative;         /* Necesario para posicionar el texto dentro de este contenedor */
+  width: 100%;                /* Hace que el header ocupe todo el ancho */
+  height: 30vh;              /* Hace que el header ocupe toda la altura de la ventana */
+  margin-bottom: 20px; /* 💡 Esto separa los contenedores verticalmente */
+}
+
+.imagen1 {
+  position: relative;         /* Establece el contexto para el texto */
+  width: 100%;                /* Ocupa todo el espacio horizontal */
+  height: 100%;               /* Ocupa todo el espacio vertical */
+}
+
+.imagen1 img {
+  width: 100%;                /* Hace que la imagen ocupe todo el contenedor */
+  height: 100%;               /* Asegura que la imagen cubra toda la altura del contenedor */
+  object-fit: cover;          /* Mantiene la proporción de la imagen, cubriendo todo el contenedor */
+}
+
+.texto1 {
+  position: absolute;         /* Posicionamos el texto sobre la imagen */
+  top: 50%;                   /* Lo centra verticalmente */
+  left: 0;                    /* Lo coloca en el costado izquierdo */
+  transform: translateY(-50%);/* Ajusta el centro verticalmente para que quede perfecto */
+  color: white;               /* Color del texto, puedes cambiarlo */
+  padding: 20px;              /* Espaciado alrededor del texto */
+  z-index: 2;                 /* Asegura que el texto esté encima de la imagen */
+}
+
+.texto1 h1 {
+  font-size: 3rem;            /* Ajusta el tamaño del título */
+}
+
+.texto1 p {
+  font-size: 1.5rem;          /* Ajusta el tamaño del párrafo */
+}
+
+
+
+.cont1 {
+  display: flex;
+  justify-content: center;      /* Centra horizontalmente */
+  align-items: center;          /* Centra verticalmente */
+  gap: 200px;                   /* Espacio entre la imagen y el texto */
+  margin-bottom: 20px; /* 💡 Esto separa los contenedores verticalmente */
+}
+
+.cont2 {
+  display: flex;
+  justify-content: center;      /* Centra horizontalmente */
+  align-items: center;          /* Centra verticalmente */
+  gap: 200px;                   /* Espacio entre la imagen y el texto */
+  margin-bottom: 20px; /* 💡 Esto separa los contenedores verticalmente */
+}
+
+.cont3 {
+  display: flex;
+  justify-content: center;      /* Centra horizontalmente */
+  align-items: center;          /* Centra verticalmente */
+  gap: 200px;                   /* Espacio entre la imagen y el texto */
+  margin-bottom: 20px; /* 💡 Esto separa los contenedores verticalmente */
+}
+
+.texto {
+  font-size: 1.2rem;
+}
+
+
+footer {
+  background-color: chocolate;  /* O el color que quieras */
+  height: 15vh;              /* 20% de la altura de la ventana */
+  display: flex;             /* Opcional si quieres centrar contenido */
+  justify-content: center;   /* Centra horizontalmente el contenido */
+  align-items: center;       /* Centra verticalmente el contenido */
+  color: white;              /* Solo para que el texto se vea mejor */
+}
+
